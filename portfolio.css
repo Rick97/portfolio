@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+html{
+    scroll-behavior:smooth
+}
+
+.main-container{
+    background-image: url(background-image.jpg);
+    background-size: 100vw;
+    background-attachment: fixed;    
+}
+
+.sidemenu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 15vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    background-color: #000032;
+}
+
+.content{
+    width: 85vw;
+}
+
+.link{
+    text-decoration: none;
+    padding: 0.5em;
+    appearance: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: ivory;
+}
+
+#about{
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text{
+    width: 70%;
+    background-color: rgba(0, 0, 35, 0.75);
+    border-radius: 2em;
+    color: ivory;
+    font-size: clamp(0.8rem, 1.3rem, 2rem);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    padding: 2em;
+    margin: 1em;
+    overflow: visible;
+}
+
+.about-img{
+    display: block;
+    max-width:400px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+#projects{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-grid{
+    box-sizing: border-box;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 1em;
+    justify-items: center;
+    padding: 1em;
+}
+
+.grid-element-link{
+    width: 100%;
+    text-decoration: none;
+    appearance: none;
+}
+.grid-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 100%;
+    background: linear-gradient(to bottom, black 50%, rgb(0, 0, 151) 50%) top;
+    background-size: 100% 201%;
+    transition: .5s ease-in-out;
+    border-radius: 2em;
+    cursor: pointer;
+    font-size: 2rem;
+    color: black;
+}
+
+.grid-element:hover{
+    background-position: bottom;
+    color: white;
+}
+
+.project-text{
+    padding: 1em;
+    text-align: center;
+}
+
+#contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+.logo{
+    margin:1em;
+    width: 6vmin;
+    height: 6vmin;
+    padding: 0.2em;
+    background-color: ivory;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background: #eee;
+    border: 3px solid transparent;
+    transition: .5s ease;
+}
+
+.logo:hover{
+    background: #eee;
+    border: 3px solid #A10000;
+    transition: .5s ease;
+}
+
+.logo-image{
+    width: 6vmin;
+    height: 6vmin;
+}
+
+@media (max-width: 700px){
+    .sidemenu{
+        left: 0;
+        top: 0;
+        height: 3em;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: center;
+        background-color: #000032;        
+    }
+    .link{
+        align-self: center;
+    }
+    .content{
+        width: 100%;
+    }
+    .grid-element{
+        background: rgb(0, 0, 151) center;
+        transition: 0s;
+        color: white;
+        font-size: 1.3rem;
+    }
+    #about{
+        flex-direction: column;
+    }
+    .about-img{
+        margin-top: 5em;
+    }
+}
