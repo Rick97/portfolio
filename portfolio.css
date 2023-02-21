@@ -87,7 +87,6 @@ html{
     grid-template-rows: repeat(2, minmax(0, 1fr));
     grid-gap: 1em;
     justify-items: center;
-    margin-top: 3em;
     height: 100%;
     width: 100%;
     padding: 1em;
@@ -188,5 +187,6 @@ html{
     .projects-grid{
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: repeat(3, minmax(0, 1fr));
+        margin-top: 3em;
     }
 }
