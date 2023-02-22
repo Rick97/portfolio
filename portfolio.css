@@ -151,8 +151,8 @@ html{
 }
 
 .logo-image{
-    width: clamp(4vmin, 1rem + 5vw, 4rem);
-    height: clamp(4vmin, 1rem + 5vw, 4rem);
+    width: clamp(20px, 1rem + 5vw, 4rem);
+    height: clamp(20px, 1rem + 5vw, 4rem);
 }
 
 @media (max-width: 700px){
@@ -192,5 +192,8 @@ html{
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: repeat(3, minmax(0, 1fr));
         margin-top: 3em;
+    }
+    .logo{
+        margin: 0.4em;
     }
 }
