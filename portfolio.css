@@ -5,16 +5,10 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-    height: 100%;
-}
-
 .main-container{
     background-image: url(background-image.jpg);
     background-size: 100vw;
-    background-attachment: fixed;
-    height: 100%;
+    background-attachment: fixed;    
 }
 
 .sidemenu{
@@ -32,6 +26,9 @@ html{
 
 .content{
     width: 85vw;
+    height: 100vh;
+    height: 100dvh;
+    scroll-behavior:smooth;
 }
 
 .link{
