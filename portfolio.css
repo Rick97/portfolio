@@ -8,7 +8,11 @@
 .main-container{
     background-image: url(background-image.jpg);
     background-size: 100vw;
-    background-attachment: fixed;    
+    background-attachment: fixed;
+    position: fixed;
+    height: 100vh;
+    height: 100dvh;
+    scroll-behavior:smooth;    
 }
 
 .sidemenu{
@@ -26,9 +30,6 @@
 
 .content{
     width: 85vw;
-    height: 100vh;
-    height: 100dvh;
-    scroll-behavior:smooth;
 }
 
 .link{
