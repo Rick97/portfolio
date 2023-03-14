@@ -9,7 +9,7 @@
     background-image: url(background-image.jpg);
     background-size: 100vw;
     background-attachment: fixed;
-    
+    width: 100%;
     height: 100vh;
     height: 100dvh;
     scroll-behavior:smooth;    
